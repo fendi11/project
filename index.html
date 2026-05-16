@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenun Nusantara - Toko Baju Tenun Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-feather-alt"></i>
+                Tenun Nusantara
+            </a>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Keindahan Tenun<br>Warisan Nusantara</h1>
+            <p>Koleksi baju tenun premium dengan motif tradisional yang dipadukan dengan sentuhan modern. Setiap helai benang menceritakan kisah budaya Indonesia.</p>
+            <div class="hero-buttons">
+                <a href="#produk" class="btn btn-primary">Lihat Koleksi</a>
+                <a href="#tentang" class="btn btn-secondary">Tentang Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Handmade</h3>
+                    <p>Dibuat tangan oleh pengrajin ahli</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Bahan Alami</h3>
+                    <p>Menggunakan pewarna dan serat alami</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Gratis ongkir ke seluruh Indonesia</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garansi Kualitas</h3>
+                    <p>Jaminan keaslian produk tenun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Koleksi Terbaik Kami</h2>
+                <p>Pilihan baju tenun premium dari berbagai daerah di Indonesia</p>
+            </div>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="blouse">Blouse</button>
+                <button class="filter-btn" data-filter="dress">Dress</button>
+                <button class="filter-btn" data-filter="kemeja">Kemeja</button>
+                <button class="filter-btn" data-filter="outer">Outer</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="blouse">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #8B4513, #D2691E);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blouse Tenun Sumba</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> NTT</p>
+                        <div class="product-price">
+                            <span class="price">Rp 850.000</span>
+                            <span class="old-price">Rp 1.200.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="dress">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #4A0E4E, #8B008B);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge new">Baru</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dress Tenun Bali</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> Bali</p>
+                        <div class="product-price">
+                            <span class="price">Rp 1.250.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="kemeja">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #1B4332, #2D6A4F);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kemeja Tenun Lombok</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> NTB</p>
+                        <div class="product-price">
+                            <span class="price">Rp 750.000</span>
+                            <span class="old-price">Rp 950.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="outer">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #7B2D26, #C0392B);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">Promo</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Outer Tenun Toraja</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> Sulawesi Selatan</p>
+                        <div class="product-price">
+                            <span class="price">Rp 1.500.000</span>
+                            <span class="old-price">Rp 2.000.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="blouse">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #1A237E, #3F51B5);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blouse Tenun Flores</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> NTT</p>
+                        <div class="product-price">
+                            <span class="price">Rp 920.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="dress">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #B8860B, #DAA520);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dress Tenun Palembang</h3>
+                        <p class="product-origin"><i class="fas fa-map-marker-alt"></i> Sumatera Selatan</p>
+                        <div class="product-price">
+                            <span class="price">Rp 1.100.000</span>
+                            <span class="old-price">Rp 1.400.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-spa"></i>
+                        <span>Sejak 2015</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>Tentang Tenun Nusantara</h2>
+                    <p>Tenun Nusantara hadir sebagai jembatan antara pengrajin tenun tradisional Indonesia dengan pecinta fashion modern. Kami berkomitmen untuk melestarikan warisan budaya bangsa melalui setiap produk yang kami hadirkan.</p>
+                    <p>Setiap produk tenun yang kami jual dibuat langsung oleh tangan-tangan terampil pengrajin dari berbagai daerah di Indonesia, mulai dari NTT, Bali, Lombok, Toraja, hingga Palembang.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Produk Tenun</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Pengrajin Mitra</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Pelanggan Puas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kata Pelanggan Kami</h2>
+                <p>Testimoni dari pelanggan setia Tenun Nusantara</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Kualitas tenunnya luar biasa! Motifnya cantik dan bahannya sangat nyaman dipakai. Sudah berulang kali belanja di sini."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SA</div>
+                        <div>
+                            <h4>Sari Ayu</h4>
+                            <span>Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Pelayanannya ramah sekali, agentnya cepat merespon pertanyaan saya. Produknya juga sangat memuaskan!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BW</div>
+                        <div>
+                            <h4>Budi Wicaksono</h4>
+                            <span>Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Dress tenun Bali yang saya beli benar-benar stunning! Dapat banyak pujian saat dipakai ke acara formal."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DR</div>
+                        <div>
+                            <h4>Dian Rahmawati</h4>
+                            <span>Bandung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi Kami</h2>
+                <p>Ada pertanyaan? Jangan ragu untuk menghubungi kami</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Tenun Indah No. 88, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@tenunnusantara.id</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Sabtu: 09.00 - 21.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subjek">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fas fa-feather-alt"></i> Tenun Nusantara</h3>
+                    <p>Melestarikan warisan budaya tenun Indonesia melalui fashion modern yang berkualitas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Blouse Tenun</a></li>
+                        <li><a href="#">Dress Tenun</a></li>
+                        <li><a href="#">Kemeja Tenun</a></li>
+                        <li><a href="#">Outer Tenun</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Kebijakan Pengembalian</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tenun Nusantara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Agent Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification">1</span>
+        </button>
+        <div id="chat-box" class="chat-box">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="agent-avatar">
+                        <i class="fas fa-headset"></i>
+                        <span class="online-dot"></span>
+                    </div>
+                    <div>
+                        <h4>Agent Tenun</h4>
+                        <span class="agent-status">Online - Siap Membantu</span>
+                    </div>
+                </div>
+                <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message agent">
+                    <div class="message-avatar"><i class="fas fa-headset"></i></div>
+                    <div class="message-content">
+                        <p>Halo! Selamat datang di Tenun Nusantara. Saya Agent Tenun, siap membantu Anda. Ada yang bisa saya bantu hari ini?</p>
+                        <span class="message-time">Baru saja</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-quick-replies">
+                <button class="quick-reply" data-message="Apa saja produk yang tersedia?">Produk Tersedia</button>
+                <button class="quick-reply" data-message="Bagaimana cara pemesanan?">Cara Pesan</button>
+                <button class="quick-reply" data-message="Berapa ongkos kirim?">Ongkir</button>
+                <button class="quick-reply" data-message="Apakah bisa custom order?">Custom Order</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ketik pesan Anda..." autocomplete="off">
+                <button id="chat-send" class="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
